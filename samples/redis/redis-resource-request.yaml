@@ -1,0 +1,7 @@
+apiVersion: promise.example.com/v1
+kind: redis
+metadata:
+  name: my-redis
+spec:
+  name: my-redis
+  # password: mypassword

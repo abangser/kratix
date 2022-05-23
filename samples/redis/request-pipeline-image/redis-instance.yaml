@@ -1,0 +1,22 @@
+apiVersion: databases.spotahome.com/v1
+kind: RedisFailover
+metadata:
+  name: NAME_PLACEHOLDER
+  namespace: default
+spec:
+  redis:
+    replicas: 3
+    resources:
+      limits:
+        cpu: 400m
+        memory: 500Mi
+      requests:
+        cpu: 100m
+        memory: 100Mi
+  sentinel:
+    replicas: 3
+    resources:
+      limits:
+        memory: 100Mi
+      requests:
+        cpu: 100m

@@ -1,0 +1,7 @@
+apiVersion: promise.example.com/v1
+kind: Redisfailover
+metadata:
+  name: my-redis-promise-request
+spec:
+  name: my-amazing-redis
+  password: supersecr3t
