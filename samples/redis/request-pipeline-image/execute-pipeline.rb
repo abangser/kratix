@@ -21,7 +21,7 @@ unless password.nil?
       'kind' => 'Secret',
       'metadata' => {'name' => authSecret},
       'type' => 'Opaque',
-      'data' => { authSecret => Base64.encode64(password).strip },
+      'data' => { 'password' => Base64.encode64(password).strip },
     }, f)
   end
 end
