@@ -18,6 +18,5 @@ snapshot:
   name_template: "{{ .Timestamp }}-next"
 
 release:
-  prerelease: auto
-
-  name_template: "{{ .ProjectName }}-{{ .Timestamp }}"
+  prerelease: true
+  name_template: "{{ .Timestamp }}"
