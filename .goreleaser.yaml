@@ -15,5 +15,9 @@ checksum:
   name_template: 'checksums.txt'
 
 snapshot:
-  name_template: "{{ .Timestamp }}"
+  name_template: "{{ .Timestamp }}-next"
 
+release:
+  prerelease: auto
+
+  name_template: "{{ .ProjectName }}-{{ .Timestamp }}"
