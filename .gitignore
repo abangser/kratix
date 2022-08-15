@@ -28,6 +28,7 @@ __debug_bin
 
 # Generated Kratix distribution yaml - contains pointers to images
 distribution/kratix.yaml
+dist/*
 
 .DS_Store
 .vscode

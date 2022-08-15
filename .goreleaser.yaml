@@ -1,0 +1,19 @@
+project_name: worker-resource-builder
+
+env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+
+builds:
+  - goos:
+      - linux
+      - windows
+      - darwin
+    main: ./hack/worker-resource-builder/main.go
+
+checksum:
+  name_template: 'checksums.txt'
+
+snapshot:
+  name_template: "{{ .Timestamp }}"
+
